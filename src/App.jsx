@@ -1,10 +1,9 @@
+import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div>
-    <h1 className='text-amber-500'>
-  App
-  </h1>
+    <div className="bg-[#212121]  text-white h-screen">
+      <Navbar />
     </div>
-  )
+  );
 }
