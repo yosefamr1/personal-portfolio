@@ -3,9 +3,9 @@ import aboutImg from "../assets/images/about.png";
 
 function About() {
   return (
-    <section id="about" className="w-full mt-12">
-      <div className="content w-4/5 m-auto p-20 flex flex-col-reverse md:flex-row justify-around items-center gap-12 border-1 border-mygreen rounded-2xl ">
-        <div className="text flex flex-col items-center w-1/2">
+    <section id="about" className="w-full my-12">
+      <div className="content w-4/5 m-auto  py-12 flex flex-col-reverse lg:flex-row justify-around items-center gap-12 border-1 border-mygreen rounded-2xl ">
+        <div className="text flex flex-col items-center px-12 lg:w-1/2">
           <p>
             I’m Youssef Amr, a passionate Front-End Developer with a solid
             foundation in HTML, CSS, JavaScript, React, and Angular. I
