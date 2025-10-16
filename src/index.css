@@ -18,23 +18,44 @@ img {
   --color-green-hover: #08CB00;
 }
 
-@keyframes gradient {
+@keyframes moveLight {
   0% {
-    background-position: 0% 50%;
+    transform: translateX(-100%) rotate(15deg);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.5;
   }
 
   50% {
-    background-position: 100% 50%;
+    transform: translateX(100%) rotate(15deg);
+    opacity: 0.6;
   }
 
   100% {
-    background-position: 0% 50%;
+    transform: translateX(150%) rotate(15deg);
+    opacity: 0;
   }
 }
 
-.animate-gradient {
-  animation: gradient 12s ease-in-out infinite;
+.moving-light {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.08) 45%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.08) 55%,
+      rgba(255, 255, 255, 0) 100%);
+  animation: moveLight 8s ease-in-out infinite;
+  pointer-events: none;
+  mix-blend-mode: overlay;
 }
+
 
 @keyframes float {
 
@@ -50,4 +71,36 @@ img {
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+}
+
+
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+  /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+  /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27ae60;
+  /* Scroll thumb color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #08CB00;
+  /* Thumb color on hover */
+}
+
+/* For better compatibility with dark mode and Firefox */
+html {
+  scrollbar-color: #08CB00 #171717;
+  /* Thumb color then track color */
+  scrollbar-width: thin;
+  /* Works for Firefox browsers */
 }

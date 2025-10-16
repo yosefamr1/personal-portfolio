@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=" bg-[#171717] py-2 px-8 flex justify-between items-center relative">
+    <div className="fixed top-0 left-0 z-1000 w-full bg-[#171717] py-2 px-8 flex justify-between items-center">
       {/* logo & name  */}
       <div className="logo ">
         <a className=" w-fit flex gap-3 items-center" href="">
@@ -39,17 +39,17 @@ function Navbar() {
         {isOpen ? <FaTimes size={32} /> : <FaBars size={32} />}
       </button>
       {isOpen && (
-        <ul className="absolute top-full left-0 w-full bg-[#171717] flex flex-col items-center gap-6 py-6 text-lg font-semibold text-mygreen md:hidden z-10">
-          <li className="hover:text-green-hover">
+        <ul className="absolute top-full right-0 bg-[#171717] flex flex-col items-center text-lg font-semibold text-mygreen md:hidden z-10 rounded-2xl">
+          <li className="hover:text-green-hover p-4">
             <a href="#">About</a>
           </li>
-          <li className="hover:text-green-hover">
+          <li className="hover:text-green-hover p-4">
             <a href="#">My Work</a>
           </li>
-          <li className="hover:text-green-hover">
+          <li className="hover:text-green-hover p-4">
             <a href="#">Skills</a>
           </li>
-          <li className="hover:text-green-hover">
+          <li className="hover:text-green-hover p-4">
             <a href="#">Contact</a>
           </li>
         </ul>
