@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 z-1000 w-full bg-[#171717] py-2 px-8 flex justify-between items-center">
+    <div className="fixed top-0 left-0 z-1000 w-full bg-[#171717]  px-8 flex justify-between items-center">
       {/* logo & name  */}
       <div className="logo ">
         <a className=" w-fit flex gap-3 items-center" href="">

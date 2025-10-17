@@ -4,7 +4,7 @@ import itilogo from "../assets/images/iti-logo.png";
 
 function Hero() {
   return (
-    <div className="relative w-full h-9/12 overflow-hidden bg-[linear-gradient(to_top_left,#383838_0%,#9e9e9e_100%)]">
+    <div className="relative w-full h-9/12 overflow-hidden mt-16 bg-[linear-gradient(to_top_left,#466173_33%,#ffffff_100%)] bg-fixed">
       {/* moving light layer*/}
       <div className="absolute inset-0 overflow-hidden">
         <div className="moving-light"></div>
