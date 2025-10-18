@@ -14,7 +14,7 @@ img {
 }
 
 @theme {
-  --color-mygreen: #27ae60;
+  --color-mygreen: #08CB00;
   --color-green-hover: #08CB00;
 }
 
@@ -109,6 +109,7 @@ html {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }

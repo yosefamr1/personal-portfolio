@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { DiVisualstudio } from "react-icons/di";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -7,17 +8,16 @@ import {
   FaReact,
   FaAngular,
   FaGitAlt,
+  FaJava,
 } from "react-icons/fa";
 import {
   SiTypescript,
-  SiTailwindcss,
-  SiBootstrap,
   SiSass,
   SiFirebase,
   SiSupabase,
+  SiCplusplus,
+  SiMysql,
   SiGithub,
-  SiNodedotjs,
-  SiExpress,
 } from "react-icons/si";
 
 function Skills() {
@@ -27,25 +27,33 @@ function Skills() {
         My Skills
       </h2>
 
+      {/* Animated Skills Row */}
       <Marquee gradient={false} speed={50} pauseOnHover={true}>
         <div className="flex gap-16 items-center text-6xl">
-          <FaHtml5 className="text-[#E34F26]" />
+          <FaHtml5 className="text-[#E34F26] ml-12" />
           <FaCss3Alt className="text-[#1572B6]" />
+          <SiSass className="text-[#CC6699]" />
           <FaJsSquare className="text-[#F7DF1E]" />
           <SiTypescript className="text-[#3178C6]" />
           <FaReact className="text-[#61DBFB]" />
           <FaAngular className="text-[#DD0031]" />
-          <SiTailwindcss className="text-[#38BDF8]" />
-          <SiBootstrap className="text-[#7952B3]" />
-          <SiSass className="text-[#CC6699]" />
           <FaGitAlt className="text-[#F05033]" />
           <SiGithub className="text-[#fff]" />
           <SiFirebase className="text-[#FFA611]" />
           <SiSupabase className="text-[#3ECF8E]" />
-          <SiNodedotjs className="text-[#83CD29]" />
-          <SiExpress className="text-[#F7DF1E]" />
+          <SiCplusplus className="text-[#00599C]" />
+          <FaJava className="text-[#E76F00]" />
+          <SiMysql className="text-[#4479A1]" />
+          <DiVisualstudio className="text-[#007ACC]" />
         </div>
       </Marquee>
+
+      {/* Optional text description under icons */}
+      <p className="text-center text-gray-300 mt-8 max-w-2xl m-auto leading-relaxed">
+        Skilled in developing responsive, clean, and interactive web
+        applications using modern technologies like React, Angular, and
+        TypeScript — with solid knowledge of OOP, APIs, and UI/UX principles.
+      </p>
     </section>
   );
 }

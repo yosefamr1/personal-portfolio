@@ -2,6 +2,8 @@ import React from "react";
 import aboutImg from "../assets/images/about.png";
 
 function About() {
+  const mycvurl =
+    "https://drive.google.com/file/d/184xmlHlVppY3leeRCEzqj9zAMGHyZIUl/view?usp=sharing";
   return (
     <section id="about" className="w-full my-12">
       <div className="content w-4/5 m-auto  py-12 flex flex-col-reverse lg:flex-row justify-around items-center gap-12 border-1 border-mygreen rounded-2xl ">
@@ -21,9 +23,14 @@ function About() {
             technologies to enhance my skills and create meaningful,
             high-quality digital experiences.
           </p>
-          <button className="w-fit mt-8 px-8 py-3 text-lg font-semibold text-white border-2 border-[#08CB00] rounded-2xl bg-transparent transition-all duration-300  hover:bg-[#08CB00] hover:text-[#171717] hover:shadow-[0_0_15px_#08CB00]ve:scale-95">
+          <a
+            href={mycvurl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit mt-8 px-8 py-3 text-lg font-semibold text-white border-2 border-[#08CB00] rounded-2xl bg-transparent transition-all duration-300  hover:bg-[#08CB00] hover:text-[#171717] hover:shadow-[0_0_15px_#08CB00]ve:scale-95"
+          >
             My Resume!
-          </button>
+          </a>
         </div>
         <div className="about_img w-1/2 ">
           <img
