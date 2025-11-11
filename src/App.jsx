@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-b from-[#171717] via-[#1f1f1f] to-[#0d0d0d]  text-white h-screen overflow-x-hidden">
+    <div className="bg-gradient-to-b from-[#171717] via-[#1f1f1f] to-[#0d0d0d]  text-white min-h-screen overflow-x-hidden">
       <Navbar/>
       <Hero/>
       <About/>

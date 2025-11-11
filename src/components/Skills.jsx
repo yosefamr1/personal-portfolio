@@ -22,7 +22,7 @@ import {
 
 function Skills() {
   return (
-    <section className="min-h-52 w-3/4 p-3 m-auto my-12 rounded-4xl flex flex-col items-center justify-center bg-[linear-gradient(120deg,hsla(0,0%,100%,.10),hsla(0,100%,100%,.03))] font-[Poppins]">
+    <section id="skills" className="min-h-52 w-3/4 p-3 m-auto my-12 rounded-4xl flex flex-col items-center justify-center bg-[linear-gradient(120deg,hsla(0,0%,100%,.10),hsla(0,100%,100%,.03))] font-[Poppins]">
       <h2 className="text-3xl font-bold text-center mb-8 text-[#08CB00]">
         My Skills
       </h2>

@@ -42,7 +42,7 @@ function Projects() {
   ];
 
   return (
-    <section className="relative bg-[#0f0f0f] py-20 px-8 text-white overflow-hidden">
+    <section id="projects" className="relative bg-[#0f0f0f] py-20 px-8 text-white overflow-hidden">
       {/* Grid background pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(#1a1a1a_1px,transparent_1px),linear-gradient(90deg,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-20"></div>
 

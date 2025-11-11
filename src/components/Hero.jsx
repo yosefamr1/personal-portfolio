@@ -2,10 +2,13 @@ import React from "react";
 import hero from "../assets/images/hero.png";
 import itilogo from "../assets/images/iti-logo.png";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Hero() {
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden mt-16 bg-[linear-gradient(to_top_left,#466173_33%,#ffffff_100%)] bg-fixed">
+    <div id="hero" 
+    className="relative w-full h-[90vh] overflow-hidden mt-16 bg-[linear-gradient(to_top_left,#466173_33%,#ffffff_100%)] bg-fixed"
+    >
       {/* moving light layer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="moving-light"></div>
@@ -32,12 +35,16 @@ function Hero() {
           <div className="mt-8 flex flex-col sm:flex-row justify-center sm:justify-start items-center gap-6">
             {/* buttons */}
             <div className="flex gap-4">
-              <a
-                href="#projects"
-                className="px-6 py-2 bg-[#08CB00] text-black font-semibold rounded-full shadow-md hover:scale-105 transition"
+              <Link
+                className="px-6 py-2 bg-[#08CB00] text-black font-semibold rounded-full shadow-md hover:scale-105 transition hover:cursor-pointer"
+                to="projects"
+                smooth={true}
+                duration={600}
+                spy={true}
+                offset={-50}
               >
                 View Projects
-              </a>
+              </Link>
               <a
                 href="#contact"
                 className="px-6 py-2 border border-[#08CB00] text-[#08CB00] font-semibold rounded-full hover:bg-[#08CB00]/10 transition"
@@ -49,7 +56,7 @@ function Hero() {
             {/* social icons */}
             <div className="flex justify-center sm:justify-start gap-6 text-2xl">
               <a
-                href="https://github.com/Youssefamr1"
+                href="https://github.com/yosefamr1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-[#08CB00] transition"
@@ -57,7 +64,7 @@ function Hero() {
                 <FaGithub />
               </a>
               <a
-                href="https://www.linkedin.com/in/youssef-amr1/"
+                href="https://www.linkedin.com/in/yosefamr2002/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-[#08CB00] transition"
@@ -65,7 +72,7 @@ function Hero() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://wa.me/201234567890"
+                href="https://wa.me/201097435967"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 hover:text-[#08CB00] transition"
@@ -79,6 +86,7 @@ function Hero() {
         {/* hero image */}
         <div className="hero_img animate-float">
           <img
+
             src={hero}
             alt="Hero"
             className="w-80 h-80 sm:w-96 sm:h-96 object-contain drop-shadow-[0_0_40px_#08CB00]"
