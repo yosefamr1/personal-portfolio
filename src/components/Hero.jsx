@@ -45,12 +45,12 @@ function Hero() {
               >
                 View Projects
               </Link>
-              <a
+              {/* <a
                 href="#contact"
                 className="px-6 py-2 border border-[#08CB00] text-[#08CB00] font-semibold rounded-full hover:bg-[#08CB00]/10 transition"
               >
                 Contact Me
-              </a>
+              </a> */}
             </div>
 
             {/* social icons */}

@@ -60,9 +60,9 @@ function Footer() {
               Projects
             </Link>
           </li>
-          <li className="hover:text-[#08CB00] transition cursor-pointer">
+          {/* <li className="hover:text-[#08CB00] transition cursor-pointer">
             Contact
-          </li>
+          </li> */}
         </ul>
 
         {/* Social Links */}
