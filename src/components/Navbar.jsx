@@ -61,9 +61,18 @@ function Navbar() {
               My Work
             </Link>
           </li>
-          {/* <li className="hover:text-green-hover">
-            <a href="">Contact</a>
-          </li> */}
+          <li className="hover:text-green-hover">
+            <Link
+              className="hover:cursor-pointer"
+              to="contact"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-50}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
       <button

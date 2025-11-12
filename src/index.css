@@ -15,7 +15,7 @@ img {
 
 @theme {
   --color-mygreen: #08CB00;
-  --color-green-hover: #08CB00;
+  --color-green-hover: #0cfb04;
 }
 
 @keyframes moveLight {
@@ -93,7 +93,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #08CB00;
+  background: #0cfb04;
   /* Thumb color on hover */
 }
 

@@ -6,8 +6,8 @@ import { Link } from "react-scroll";
 
 function Hero() {
   return (
-    <div id="hero" 
-    className="relative w-full h-[90vh] overflow-hidden mt-16 bg-[linear-gradient(to_top_left,#466173_33%,#ffffff_100%)] bg-fixed"
+    <div id="hero"
+      className="relative w-full h-[90vh] overflow-hidden mt-16 bg-[linear-gradient(to_top_left,#466173_33%,#ffffff_100%)] bg-fixed"
     >
       {/* moving light layer */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -45,12 +45,16 @@ function Hero() {
               >
                 View Projects
               </Link>
-              {/* <a
-                href="#contact"
-                className="px-6 py-2 border border-[#08CB00] text-[#08CB00] font-semibold rounded-full hover:bg-[#08CB00]/10 transition"
+              <Link
+                className="px-6 py-2 border border-[#08CB00] text-[#08CB00] font-semibold rounded-full hover:bg-[#08CB00]/10 transition hover:scale-105 transition hover:cursor-pointer"
+                to="contact"
+                smooth={true}
+                duration={600}
+                spy={true}
+                offset={-50}
               >
                 Contact Me
-              </a> */}
+              </Link>
             </div>
 
             {/* social icons */}
