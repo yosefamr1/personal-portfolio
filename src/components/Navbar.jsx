@@ -13,7 +13,8 @@ function Navbar() {
           to="hero"
           smooth={true}
           duration={600}
-          className=" w-fit flex gap-3 items-center" href=""
+          className=" w-fit flex gap-3 items-center"
+          href=""
         >
           <img className=" w-16 rounded-4xl" src={logo} alt="" />{" "}
           <h2 className="text-mygreen font-bold text-2xl md:text-3xl hover:text-green-hover">
@@ -93,7 +94,8 @@ function Navbar() {
               offset={-50}
             >
               About
-            </Link>          </li>
+            </Link>{" "}
+          </li>
           <li className="hover:text-green-hover">
             <Link
               className="hover:cursor-pointer"
@@ -116,10 +118,20 @@ function Navbar() {
               offset={-50}
             >
               My Work
-            </Link>          </li>
-          {/* <li className="hover:text-green-hover p-4">
-            <a href="#">Contact</a>
-          </li> */}
+            </Link>
+          </li>
+          <li className="hover:text-green-hover p-4">
+             <Link
+              className="hover:cursor-pointer"
+              to="contact"
+              smooth={true}
+              duration={600}
+              spy={true}
+              offset={-50}
+            >
+              Contact
+            </Link> 
+          </li>
         </ul>
       )}
     </div>
