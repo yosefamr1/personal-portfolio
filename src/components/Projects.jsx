@@ -4,6 +4,10 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import HealthyHive from "../assets/images/Projects/Healthyhive.png";
 import BookingApp from "../assets/images/Projects/BookingApp.png";
 import MovieApp from "../assets/images/Projects/MovieApp.png";
+import Finsweet from "../assets/images/Projects/Finsweet.png";
+import lookscout from "../assets/images/Projects/lookscout.png";
+
+
 
 function Projects() {
   const projects = [
@@ -20,6 +24,7 @@ function Projects() {
       img: HealthyHive,
       link: "https://healthy-hive.netlify.app/",
       github: "https://github.com/OmarIsmail277/HealthyHive",
+      grad: "iti Grad Project 🎓",
     },
     {
       title: "Booking App",
@@ -34,15 +39,36 @@ function Projects() {
       title: "Movie App",
       description:
         "Angular Movie app - Movie browsing platform with category filtering and API integration.",
-      tech: ["Angular", "TypeScript", " REST API","PrimeNg"],
+      tech: ["Angular", "TypeScript", " REST API", "PrimeNg"],
       img: MovieApp,
       link: "https://yosefamr1.github.io/movie_app__final_project/",
       github: "https://github.com/yosefamr1/movie_app__final_project",
     },
+    {
+      title: "{Finsweet",
+      description:
+        "Multi-section landing page inspired by Finsweet’s design style.",
+      tech: ["HTML", "CSS",],
+      img: Finsweet,
+      link: "https://html-css-task-eta.vercel.app/",
+      github: "https://github.com/yosefamr1/angular-lec4-task",
+    },
+     {
+      title: "Lookscout",
+      description:
+        "Multi-section landing page .",
+      tech: ["HTML", "CSS",],
+      img: lookscout,
+      link: "https://lookscout-alpha.vercel.app/",
+      github: "https://github.com/yosefamr1/Lookscout",
+    },
   ];
 
   return (
-    <section id="projects" className="relative bg-[#0f0f0f] py-20 px-8 text-white overflow-hidden">
+    <section
+      id="projects"
+      className="relative bg-[#0f0f0f] py-20 px-8 text-white overflow-hidden"
+    >
       {/* Grid background pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(#1a1a1a_1px,transparent_1px),linear-gradient(90deg,#1a1a1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-20"></div>
 
@@ -60,7 +86,12 @@ function Projects() {
               className="bg-[#171717] border border-[#08CB00]/40 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_#08CB00]/60"
             >
               {/* Project image */}
-              <div className="w-full h-48 overflow-hidden">
+              <div className="w-full h-48 overflow-hidden relative">
+                {project.grad && (
+                  <div className="absolute top-[40px] left-[-20px] bg-mygreen  rotate-[-45deg] text-[#171717] px-3 py-1 rounded-full text-sm font-semibold z-10">
+                    {project.grad}
+                  </div>
+                )}
                 <img
                   src={project.img}
                   alt={project.title}
