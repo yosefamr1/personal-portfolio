@@ -3,7 +3,9 @@ import aboutImg from "../assets/images/about.png";
 
 function About() {
   const mycvurl =
-    "https://drive.google.com/file/d/184xmlHlVppY3leeRCEzqj9zAMGHyZIUl/view?usp=sharing";
+    // "https://drive.google.com/file/d/184xmlHlVppY3leeRCEzqj9zAMGHyZIUl/view?usp=sharing";
+    "https://drive.google.com/file/d/1bWdjnrqEqeYwe8En3_kFR4jqrjvoc8un/view?usp=drive_link";
+
   return (
     <section id="about" className="w-full my-12">
       <div className="content w-4/5 m-auto  py-12 flex flex-col-reverse lg:flex-row justify-around items-center gap-12 border-1 border-mygreen rounded-2xl ">
