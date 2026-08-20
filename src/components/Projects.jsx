@@ -22,7 +22,7 @@ function Projects() {
         "Supabase",
       ],
       img: HealthyHive,
-      link: "https://healthy-hive.netlify.app/",
+      link: "https://healthy-hive.vercel.app/",
       github: "https://github.com/OmarIsmail277/HealthyHive",
       grad: "iti Grad Project 🎓",
     },
